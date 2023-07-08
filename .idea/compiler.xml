@@ -6,21 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="loans" />
+        <module name="eurekaserver" />
         <module name="cards" />
         <module name="accounts" />
+        <module name="configserver" />
+        <module name="loans" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="accounts" target="17" />
-      <module name="cards" target="17" />
-      <module name="loans" target="17" />
+      <module name="accounts" target="11" />
+      <module name="cards" target="11" />
+      <module name="configserver" target="11" />
+      <module name="eurekaserver" target="11" />
+      <module name="loans" target="11" />
+      <module name="untitled" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="accounts" options="-parameters" />
       <module name="cards" options="-parameters" />
+      <module name="configserver" options="-parameters" />
+      <module name="eurekaserver" options="-parameters" />
       <module name="loans" options="-parameters" />
     </option>
   </component>
