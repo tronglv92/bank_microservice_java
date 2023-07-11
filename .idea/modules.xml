@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/cards/cards.iml" filepath="$PROJECT_DIR$/cards/cards.iml" />
       <module fileurl="file://$PROJECT_DIR$/configserver.iml" filepath="$PROJECT_DIR$/configserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/eurekaserver.iml" filepath="$PROJECT_DIR$/eurekaserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gatewayserver.iml" filepath="$PROJECT_DIR$/gatewayserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/loans/loans.iml" filepath="$PROJECT_DIR$/loans/loans.iml" />
     </modules>
   </component>

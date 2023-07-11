@@ -4,3 +4,4 @@ github:
 	git add --force loans/src
 	git add --force configserver/src
 	git add --force eurekaserver/src
+	git add --force gatewayserver/src
