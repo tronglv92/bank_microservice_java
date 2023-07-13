@@ -1,0 +1,4 @@
+/Users/luongvantrong/backend/master_microservice_java_spring_docker/bank/gatewayserver/src/main/java/com/tronglv/gatewayserver/filters/FilterUtility.java
+/Users/luongvantrong/backend/master_microservice_java_spring_docker/bank/gatewayserver/src/main/java/com/tronglv/gatewayserver/GatewayserverApplication.java
+/Users/luongvantrong/backend/master_microservice_java_spring_docker/bank/gatewayserver/src/main/java/com/tronglv/gatewayserver/filters/TraceFilter.java
+/Users/luongvantrong/backend/master_microservice_java_spring_docker/bank/gatewayserver/src/main/java/com/tronglv/gatewayserver/filters/ResponseTraceFilter.java

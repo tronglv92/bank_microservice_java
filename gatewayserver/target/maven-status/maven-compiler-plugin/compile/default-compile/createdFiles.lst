@@ -1,0 +1,4 @@
+com/tronglv/gatewayserver/filters/TraceFilter.class
+com/tronglv/gatewayserver/filters/FilterUtility.class
+com/tronglv/gatewayserver/GatewayserverApplication.class
+com/tronglv/gatewayserver/filters/ResponseTraceFilter.class
