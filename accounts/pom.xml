@@ -16,6 +16,7 @@
 	<properties>
 		<java.version>11</java.version>
 		<spring-cloud.version>2021.0.7</spring-cloud.version>
+		<micrometer-tracing.version>1.0.1</micrometer-tracing.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -38,6 +39,7 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
+<!--		Dung de goi rest api cua service trong microservice-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
@@ -52,6 +54,7 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+<!--		Making Microservice Resilient-->
 		<dependency>
 			<groupId>io.github.resilience4j</groupId>
 			<artifactId>resilience4j-spring-boot2</artifactId>
@@ -69,6 +72,39 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+<!--		Distributed tracing & Log aggregation in Microservice-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-sleuth</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-sleuth-zipkin</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.amqp</groupId>
+			<artifactId>spring-rabbit</artifactId>
+		</dependency>
+		<!--Monitoring microservices Metrics & Health-->
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-registry-prometheus</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+
+<!--		<dependency>-->
+<!--			<groupId>io.opentelemetry</groupId>-->
+<!--			<artifactId>opentelemetry-exporter-zipkin</artifactId>-->
+<!--			<version>${micrometer-tracing.version}</version>-->
+<!--		</dependency>-->
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
@@ -79,6 +115,7 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 	<build>

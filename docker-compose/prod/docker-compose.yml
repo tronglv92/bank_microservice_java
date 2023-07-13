@@ -27,7 +27,7 @@ services:
         window: 120s
     environment:
       SPRING_APPLICATION_NAME: accounts
-      SPRING_PROFILES_ACTIVE: default
+      SPRING_PROFILES_ACTIVE: prod
       SPRING_CONFIG_IMPORT: configserver:http://configserver:8071/
   
   loans:
@@ -47,7 +47,7 @@ services:
         window: 120s
     environment:
       SPRING_APPLICATION_NAME: loans
-      SPRING_PROFILES_ACTIVE: default
+      SPRING_PROFILES_ACTIVE: prod
       SPRING_CONFIG_IMPORT: configserver:http://configserver:8071/
     
   cards:
@@ -67,7 +67,7 @@ services:
         window: 120s
     environment:
       SPRING_APPLICATION_NAME: cards
-      SPRING_PROFILES_ACTIVE: default
+      SPRING_PROFILES_ACTIVE: prod
       SPRING_CONFIG_IMPORT: configserver:http://configserver:8071/
       
 networks:

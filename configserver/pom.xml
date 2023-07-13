@@ -16,6 +16,7 @@
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>2021.0.7</spring-cloud.version>
+        <micrometer-tracing.version>1.0.1</micrometer-tracing.version>
     </properties>
     <dependencies>
         <dependency>
@@ -32,6 +33,18 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-sleuth</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.amqp</groupId>
+            <artifactId>spring-rabbit</artifactId>
+        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>
@@ -42,6 +55,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 
